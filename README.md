@@ -46,7 +46,7 @@
 <!-- /BADGES -->
 
 <!-- DESCRIPTION/ -->
-
+Adjusts a Mocha output so that it is consistent across platforms and can be used for snapshot testing.
 <!-- /DESCRIPTION -->
 
 <!-- INSTALL/ -->
