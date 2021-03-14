@@ -1,7 +1,10 @@
 {
   "name": "unify-mocha-output",
   "version": "1.0.0",
-  "description": "Adjusts a Mocha output so that it is consistent across platforms and can be used for snapshot testing.",
+  "description": "Adjusts a Mocha output so that it is consistent across platforms and can be used for snapshot testing. Basically adjusts the checkmark symbol and removes time values.",
+  "keywords": [
+    "milliseconds"
+  ],
   "repository": "dword-design/unify-mocha-output",
   "license": "MIT",
   "author": "Sebastian Landwehr <info@dword-design.de>",

@@ -46,7 +46,7 @@
 <!-- /BADGES -->
 
 <!-- DESCRIPTION/ -->
-
+Adjusts a Mocha output so that it is consistent across platforms and can be used for snapshot testing. Basically adjusts the checkmark symbol and removes time values.
 <!-- /DESCRIPTION -->
 
 <!-- INSTALL/ -->
@@ -60,6 +60,34 @@ $ npm install unify-mocha-output
 $ yarn add unify-mocha-output
 ```
 <!-- /INSTALL -->
+
+## Usage
+
+```js
+import unifyMochaOutput from 'unify-mocha-output'
+
+console.log(unifyMochaOutput(
+`index
+    √ test1
+    √ test2
+
+
+  2 passing (7ms)
+
+`
+))
+
+/*
+index
+    ✓ test1
+    ✓ test2
+
+
+  2 passing
+
+`/
+```
+
 
 <!-- LICENSE/ -->
 ## Support Me
