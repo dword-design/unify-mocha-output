@@ -1,3 +1,10 @@
+## [1.0.3](https://github.com/dword-design/unify-mocha-output/compare/v1.0.2...v1.0.3) (2021-03-22)
+
+
+### Bug Fixes
+
+* remove test times ([#4](https://github.com/dword-design/unify-mocha-output/issues/4)) ([c25f3c4](https://github.com/dword-design/unify-mocha-output/commit/c25f3c4f4835be68607aad355ebc5b72e1ebbdaf))
+
 ## [1.0.2](https://github.com/dword-design/unify-mocha-output/compare/v1.0.1...v1.0.2) (2021-03-22)
 
 
