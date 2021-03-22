@@ -1,3 +1,10 @@
+## [1.0.4](https://github.com/dword-design/unify-mocha-output/compare/v1.0.3...v1.0.4) (2021-03-22)
+
+
+### Bug Fixes
+
+* omit seconds ([54e98e4](https://github.com/dword-design/unify-mocha-output/commit/54e98e49095236112cfbd6a4c68a8ef625e67585))
+
 ## [1.0.3](https://github.com/dword-design/unify-mocha-output/compare/v1.0.2...v1.0.3) (2021-03-22)
 
 
