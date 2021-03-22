@@ -69,4 +69,24 @@ export default [
     2 passing
     
   `),
+  () =>
+    expect(
+      self(endent`
+  
+    index
+      ✓ test (2s)
+  
+  
+    1 passing
+    
+  `)
+    ).toEqual(endent`
+  
+    index
+      ✓ test
+    
+
+    1 passing
+    
+  `),
 ]
