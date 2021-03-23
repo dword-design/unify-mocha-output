@@ -1,3 +1,10 @@
+## [1.0.5](https://github.com/dword-design/unify-mocha-output/compare/v1.0.4...v1.0.5) (2021-03-23)
+
+
+### Bug Fixes
+
+* update dependency @dword-design/functions to v3 ([#5](https://github.com/dword-design/unify-mocha-output/issues/5)) ([487ca2c](https://github.com/dword-design/unify-mocha-output/commit/487ca2c8fbc274289506950a44459e7911332251))
+
 ## [1.0.4](https://github.com/dword-design/unify-mocha-output/compare/v1.0.3...v1.0.4) (2021-03-22)
 
 

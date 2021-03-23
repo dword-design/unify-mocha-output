@@ -1,6 +1,6 @@
 {
   "name": "unify-mocha-output",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Adjusts a Mocha output so that it is consistent across platforms and can be used for snapshot testing. Basically adjusts the checkmark symbol and removes time values.",
   "keywords": [
     "milliseconds"
