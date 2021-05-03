@@ -1,3 +1,19 @@
+# [2.0.0](https://github.com/dword-design/unify-mocha-output/compare/v1.0.7...v2.0.0) (2021-05-03)
+
+
+### Bug Fixes
+
+* update dependency @dword-design/base to v8 ([#14](https://github.com/dword-design/unify-mocha-output/issues/14)) ([c64c8d2](https://github.com/dword-design/unify-mocha-output/commit/c64c8d2f38b9c5dd65c1600e84139d32b60dfe43))
+
+
+### BREAKING CHANGES
+
+* require Node.js >= 12
+
+Co-authored-by: Renovate Bot <bot@renovateapp.com>
+Co-authored-by: Sebastian Landwehr <info@dword-design.de>
+Co-authored-by: GitHub Actions <actions@github.com>
+
 ## [1.0.7](https://github.com/dword-design/unify-mocha-output/compare/v1.0.6...v1.0.7) (2021-04-12)
 
 
