@@ -1,55 +1,33 @@
-import { endent } from '@dword-design/functions'
+import { endent, property } from '@dword-design/functions'
+import tester from '@dword-design/tester'
+import testerPluginTmpDir from '@dword-design/tester-plugin-tmp-dir'
+import execa from 'execa'
+import { outputFile } from 'fs-extra'
+import P from 'path'
 
 import self from '.'
 
-export default [
-  () =>
-    expect(
-      self(endent`
-  
-    index
-      ✓ test1
-      ✓ test2
-  
-  
-    2 passing (7ms)
-    
-  `)
-    ).toEqual(endent`
-  
-    index
-      ✓ test1
-      ✓ test2
+export default tester(
+  [
+    async function () {
+      await outputFile(
+        P.join('test', 'test.js'),
+        endent`
+      const { delay } = require('@dword-design/functions')
 
+      describe('index', () => {
+        it('test1', () => delay(50))
+        it('test2', () => delay(50))
+      })
+    `
+      )
 
-    2 passing
-    
-  `),
-  () =>
-    expect(
-      self(endent`
-  
-    index
-      √ test1
-      √ test2
-  
-  
-    2 passing (7ms)
-    
-  `)
-    ).toEqual(endent`
-  
-    index
-      ✓ test1
-      ✓ test2
-
-
-    2 passing
-    
-  `),
-  () =>
-    expect(
-      self(endent`
+      const output = execa.command('mocha') |> await |> property('stdout')
+      expect(output |> self).toMatchSnapshot(this)
+    },
+    function () {
+      expect(
+        self(endent`
   
     index
       ✓ test1 (1000ms)
@@ -59,19 +37,11 @@ export default [
     2 passing
     
   `)
-    ).toEqual(endent`
-  
-    index
-      ✓ test1
-      ✓ test2
-
-
-    2 passing
-    
-  `),
-  () =>
-    expect(
-      self(endent`
+      ).toMatchSnapshot(this)
+    },
+    function () {
+      expect(
+        self(endent`
   
     index
       ✓ test (2s)
@@ -80,13 +50,22 @@ export default [
     1 passing
     
   `)
-    ).toEqual(endent`
+      ).toMatchSnapshot(this)
+    },
+    function () {
+      expect(
+        self(endent`
   
     index
-      ✓ test
+      √ test1
+      √ test2
+  
+  
+    2 passing (7ms)
     
-
-    1 passing
-    
-  `),
-]
+  `)
+      ).toMatchSnapshot(this)
+    },
+  ],
+  [testerPluginTmpDir()]
+)

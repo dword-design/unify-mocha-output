@@ -1,0 +1,45 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`index 0 1`] = `
+"
+
+  index
+    ✓ test1
+    ✓ test2
+
+
+  2 passing
+"
+`;
+
+exports[`index 1 1`] = `
+"
+index
+  ✓ test1
+  ✓ test2
+
+
+2 passing
+"
+`;
+
+exports[`index 2 1`] = `
+"
+index
+  ✓ test
+
+
+1 passing
+"
+`;
+
+exports[`index 3 1`] = `
+"
+index
+  ✓ test1
+  ✓ test2
+
+
+2 passing
+"
+`;
