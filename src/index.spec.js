@@ -66,6 +66,7 @@ export default tester(
   `)
       ).toMatchSnapshot(this)
     },
+    () => expect(self('1 passed (1m)')).toEqual('1 passed'),
   ],
   [testerPluginTmpDir()]
 )
