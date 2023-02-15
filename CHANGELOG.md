@@ -1,3 +1,10 @@
+## [2.0.9](https://github.com/dword-design/unify-mocha-output/compare/v2.0.8...v2.0.9) (2023-02-15)
+
+
+### Bug Fixes
+
+* lock file maintenance ([#32](https://github.com/dword-design/unify-mocha-output/issues/32)) ([1a41886](https://github.com/dword-design/unify-mocha-output/commit/1a418861efd54a765e132aab62b9eba58c1e772c))
+
 ## [2.0.8](https://github.com/dword-design/unify-mocha-output/compare/v2.0.7...v2.0.8) (2023-01-06)
 
 
