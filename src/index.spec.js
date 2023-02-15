@@ -1,19 +1,19 @@
 import { endent, property } from '@dword-design/functions'
 import tester from '@dword-design/tester'
 import testerPluginTmpDir from '@dword-design/tester-plugin-tmp-dir'
-import execa from 'execa'
-import { outputFile } from 'fs-extra'
+import { execaCommand } from 'execa'
+import fs from 'fs-extra'
 import P from 'path'
 
-import self from '.'
+import self from './index.js'
 
 export default tester(
   [
     async function () {
-      await outputFile(
+      await fs.outputFile(
         P.join('test', 'test.js'),
         endent`
-      const { delay } = require('@dword-design/functions')
+      import { delay } from '@dword-design/functions'
 
       describe('index', () => {
         it('test1', () => delay(50))
@@ -22,7 +22,7 @@ export default tester(
     `
       )
 
-      const output = execa.command('mocha') |> await |> property('stdout')
+      const output = execaCommand('mocha') |> await |> property('stdout')
       expect(output |> self).toMatchSnapshot(this)
     },
     function () {
