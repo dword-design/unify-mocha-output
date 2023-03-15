@@ -1,3 +1,10 @@
+## [2.0.10](https://github.com/dword-design/unify-mocha-output/compare/v2.0.9...v2.0.10) (2023-03-15)
+
+
+### Bug Fixes
+
+* update dependency @dword-design/tester-plugin-tmp-dir to v2.1.10 ([08785aa](https://github.com/dword-design/unify-mocha-output/commit/08785aa4193d677db506dd96a148974311db39c3))
+
 ## [2.0.9](https://github.com/dword-design/unify-mocha-output/compare/v2.0.8...v2.0.9) (2023-02-15)
 
 
