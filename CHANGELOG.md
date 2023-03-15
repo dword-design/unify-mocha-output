@@ -1,3 +1,10 @@
+## [2.0.11](https://github.com/dword-design/unify-mocha-output/compare/v2.0.10...v2.0.11) (2023-03-15)
+
+
+### Bug Fixes
+
+* update dependency execa to v7.1.1 ([00e2661](https://github.com/dword-design/unify-mocha-output/commit/00e2661920bc5bc4829d188a88279b7dff1154d0))
+
 ## [2.0.10](https://github.com/dword-design/unify-mocha-output/compare/v2.0.9...v2.0.10) (2023-03-15)
 
 
