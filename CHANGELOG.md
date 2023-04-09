@@ -1,3 +1,10 @@
+## [2.0.19](https://github.com/dword-design/unify-mocha-output/compare/v2.0.18...v2.0.19) (2023-04-09)
+
+
+### Bug Fixes
+
+* update dependency fs-extra to v11.1.1 ([867aaa7](https://github.com/dword-design/unify-mocha-output/commit/867aaa75765385e4d16d8c1c95a8c7fe7e324302))
+
 ## [2.0.18](https://github.com/dword-design/unify-mocha-output/compare/v2.0.17...v2.0.18) (2023-03-19)
 
 
