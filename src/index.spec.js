@@ -13,13 +13,13 @@ export default tester(
       await fs.outputFile(
         P.join('test', 'test.js'),
         endent`
-      import { delay } from '@dword-design/functions'
+          import { delay } from '@dword-design/functions'
 
-      describe('index', () => {
-        it('test1', () => delay(50))
-        it('test2', () => delay(50))
-      })
-    `
+          describe('index', () => {
+            it('test1', () => delay(50))
+            it('test2', () => delay(50))
+          })
+        `,
       )
 
       const output = execaCommand('mocha') |> await |> property('stdout')
@@ -29,44 +29,44 @@ export default tester(
       expect(
         self(endent`
   
-    index
-      ✓ test1 (1000ms)
-      ✓ test2 (2000ms)
+          index
+            ✓ test1 (1000ms)
+            ✓ test2 (2000ms)
   
   
-    2 passing
-    
-  `)
+          2 passing
+
+        `),
       ).toMatchSnapshot(this)
     },
     function () {
       expect(
         self(endent`
   
-    index
-      ✓ test (2s)
+          index
+            ✓ test (2s)
   
   
-    1 passing
-    
-  `)
+          1 passing
+
+        `),
       ).toMatchSnapshot(this)
     },
     function () {
       expect(
         self(endent`
   
-    index
-      √ test1
-      √ test2
+          index
+            √ test1
+            √ test2
   
   
-    2 passing (7ms)
-    
-  `)
+          2 passing (7ms)
+
+        `),
       ).toMatchSnapshot(this)
     },
     () => expect(self('1 passed (1m)')).toEqual('1 passed'),
   ],
-  [testerPluginTmpDir()]
+  [testerPluginTmpDir()],
 )
