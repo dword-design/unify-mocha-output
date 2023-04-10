@@ -1,3 +1,10 @@
+## [2.0.21](https://github.com/dword-design/unify-mocha-output/compare/v2.0.20...v2.0.21) (2023-04-10)
+
+
+### Bug Fixes
+
+* update dependency @dword-design/tester to v2.0.16 ([d381f92](https://github.com/dword-design/unify-mocha-output/commit/d381f929dfbd8700277085332f566741f7c12a40))
+
 ## [2.0.20](https://github.com/dword-design/unify-mocha-output/compare/v2.0.19...v2.0.20) (2023-04-09)
 
 
