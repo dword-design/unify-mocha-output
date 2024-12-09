@@ -34,7 +34,7 @@
     "@dword-design/tester-plugin-tmp-dir": "^2.0.3",
     "execa": "^7.0.0",
     "fs-extra": "^11.1.0",
-    "mocha": "^10.2.0"
+    "mocha": "^11.0.0"
   },
   "engines": {
     "node": ">=14"
